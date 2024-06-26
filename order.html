@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 30px;
+        }
+        .header .menu {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .image-container {
+            width: 100%;
+        }
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+        .form-container {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                margin: 20px auto;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/food logo.png" alt="Icon">
+            <div class="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/chicken.jpg" alt="Baked-chicken">
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="dine-in" name="dine-in">
+                    <label for="dine-in">Dine in</label>
+                </div>
+                <div class="form-group">
+                    <label for="table-number">Table Number</label>
+                    <input type="text" id="table-number" name="table-number">
+                </div>
+                <div class="form-group">
+                    <label for="dine-in-quantity">Quantity</label>
+                    <input type="number" id="dine-in-quantity" name="dine-in-quantity">
+                </div>
+                <div class="form-group">
+                    <label for="dine-in-instructions">Special Instructions</label>
+                    <textarea id="dine-in-instructions" name="dine-in-instructions" rows="3"></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="take-out" name="take-out">
+                    <label for="take-out">Take out</label>
+                </div>
+                <div class="form-group">
+                    <label for="take-out-quantity">Quantity</label>
+                    <input type="number" id="take-out-quantity" name="take-out-quantity">
+                </div>
+                <div class="form-group">
+                    <label for="take-out-instructions">Special Instructions</label>
+                    <textarea id="take-out-instructions" name="take-out-instructions" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

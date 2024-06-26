@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2d2d2d;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #555;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .header img {
+            width: 30px;
+            vertical-align: middle;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        .menu-container {
+            text-align: center;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .menu-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+        .menu-item .content {
+            padding: 15px;
+            text-align: left;
+        }
+        .menu-item .content h3 {
+            margin-top: 0;
+        }
+        .menu-item .content p {
+            margin: 10px 0;
+        }
+        .menu-item .content .price {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .menu-item .content .order-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            .header img {
+                width: 25px;
+            }
+            .header a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+            .menu-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/food logo.png" alt="Logo">
+        <!-- Add any additional header content here -->
+    </div>
+    <div class="menu-container">
+        <div class="menu-title">Today's Menu</div>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/coffee.jpg" alt="Coffee">
+                <div class="content">
+                    <h3>Coffee</h3>
+                    <p>Rich, aromatic coffee brewed to perfection, offering a delightful start to your day.</p>
+                    <div class="price">Ksh. 250/-</div>
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/chicken.jpg" alt="Baked Chicken">
+                <div class="content">
+                    <h3>Baked Chicken</h3>
+                    <p>Juicy baked chicken with crispy skin, seasoned to perfection with herbs and spices.</p>
+                    <div class="price">Ksh. 850/-</div>
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/fries.jpg" alt="Fries">
+                <div class="content">
+                    <h3>Fries</h3>
+                    <p>Crispy, golden fries seasoned to perfection, a timeless treat for any craving.</p>
+                    <div class="price">Ksh. 350/-</div>
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <div class="content">
+                    <h3>Pizza</h3>
+                    <p>Deliciously crafted pizza with a perfect blend of savory toppings and melted cheese on a crispy crust.</p>
+                    <div class="price">Ksh. 1500/-</div>
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/burger.jpg" alt="Burger">
+                <div class="content">
+                    <h3>Burger</h3>
+                    <p>Juicy, flavorful burger topped with fresh ingredients, served on a toasted bun for the ultimate bite.</p>
+                    <div class="price">Ksh. 550/-</div>
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/cake.jpg" alt="Cake">
+                <div class="content">
+                    <h3>Cake</h3>
+                    <p>Moist cake layered with rich frosting, a perfect indulgence for any sweet tooth.</p>
+                    <div class="price">Ksh. 150/-</div>
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
