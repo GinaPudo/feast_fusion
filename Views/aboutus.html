@@ -41,21 +41,24 @@
       margin: 20px auto;
     }
     .team {
-      display: flex;
+      /* display: flex;
       justify-content: space-around;
-      flex-wrap: wrap;
+      flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: auto auto auto;
     }
     .team-member {
       background: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 30%;
+      width: 80%;
       margin: 10px;
       text-align: center;
       padding: 20px;
     }
     .team-member img {
-      width: 100%;
+      width: 60%;
+      height: 28vh;
       border-radius: 50%;
     }
     .team-member h3 {
@@ -65,12 +68,25 @@
     .team-member p {
       font-size: 0.9em;
       color: #666;
+      text-align: center;
     }
     footer {
       text-align: center;
       padding: 20px 0;
       background-color: #4CAF50;
       color: white;
+    }
+    @media (max-width:1000px) {
+      .team {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    }
+    @media (max-width:650px) {
+      .team {
+      display: grid;
+      grid-template-columns: auto;
+    }
     }
   </style>
 </head>
@@ -96,19 +112,19 @@
       <h2>Meet Our Team</h2>
       <div class="team">
         <div class="team-member">
-          <img src="images/male-chef.jpg" alt="Chef Jeff Ali">
+          <img src="../Public/images/male-chef.jpg" alt="Chef Jeff Ali">
           <h3>Jeff Ali</h3>
           <p>Executive Chef</p>
           <p>With over 20 years in the culinary world, John brings a wealth of experience and a passion for innovative cuisine to our kitchen.</p>
         </div>
         <div class="team-member">
-          <img src="images/female-chef.jpg" alt="Chef Janet Smith">
+          <img src="../Public/images/female-chef.jpg" alt="Chef Janet Smith">
           <h3>Janet Smith</h3>
           <p>Pastry Chef</p>
           <p>Janet's creativity and expertise in pastry making have earned her accolades and a place at the heart of our dessert menu.</p>
         </div>
         <div class="team-member">
-          <img src="images/male_chef.jpg" alt="Chef Michael Brown">
+          <img src="../Public/images/male_chef.jpg" alt="Chef Michael Brown">
           <h3>Michael Brown</h3>
           <p>Sous Chef</p>
           <p>Michael's dedication to perfection and attention to detail ensure that every dish is crafted to the highest standards.</p>
